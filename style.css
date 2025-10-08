@@ -75,4 +75,35 @@ footer {
   padding: 2em 1em;
   font-size: 0.9em;
   color: #888;
+
+
+
+  .link-list {
+  list-style: none;             /* Remove bullet points */
+  padding: 0;                  /* Remove default padding */
+  margin: 2em 0;               /* Add vertical spacing */
+  display: flex;               /* Use flexbox for layout */
+  flex-direction: column;      /* Stack links vertically */
+  gap: 1em;                   /* Space between each link */
 }
+
+.link-list a {
+  color: #1DB954;              /* Spotify green for a standout color */
+  border: 1px solid #1DB954;  /* Border matching text color */
+  padding: 0.75em 1em;         /* Add spacing inside each link */
+  display: inline-block;       /* Make the link box-shape */
+  width: fit-content;          /* Shrink to content width */
+  text-transform: uppercase;   /* Capitalize letters */
+  letter-spacing: 1px;         /* Space out letters slightly */
+  text-decoration: none;       /* Remove underline */
+  transition: background-color 0.3s, color 0.3s;  /* Smooth hover transition */
+}
+
+.link-list a:hover {
+  background-color: #1DB954;   /* Fill background on hover */
+  color: #000;                 /* Change text to black on hover */
+  cursor: pointer;             /* Pointer cursor on hover */
+}
+
+}
+
