@@ -1,109 +1,93 @@
-/* css/style.css */
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #000;
   color: #fff;
   line-height: 1.6;
-}
-
-header {
-  text-align: center;
-  padding: 2em 1em;
-  border-bottom: 1px solid #333;
-}
-
-h1 {
-  font-size: 2.5em;
-  letter-spacing: 0.1em;
-}
-
-.tagline {
-  font-style: italic;
-  font-size: 1em;
-  color: #aaa;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 1em;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  gap: 1em;
-  flex-wrap: wrap;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  padding: 0.5em 1em;
-  border: 1px solid #fff;
-  transition: background 0.2s ease;
-}
-
-nav a:hover,
-nav a.active {
-  background-color: #fff;
-  color: #000;
-}
-
-main {
-  padding: 2em 1em;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-section {
-  margin-bottom: 3em;
+  flex-direction: column;
 }
 
 a {
   color: #1DB954;
   text-decoration: none;
-  border-bottom: 1px dotted #1DB954;
 }
 
 a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #111;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
   color: #fff;
-  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
 }
 
-footer {
-  text-align: center;
-  padding: 2em 1em;
-  font-size: 0.9em;
-  color: #888;
-
-
-
-  .link-list {
-  list-style: none;             /* Remove bullet points */
-  padding: 0;                  /* Remove default padding */
-  margin: 2em 0;               /* Add vertical spacing */
-  display: flex;               /* Use flexbox for layout */
-  flex-direction: column;      /* Stack links vertically */
-  gap: 1em;                   /* Space between each link */
+nav a:hover,
+nav a.active {
+  color: #1DB954;
+  background-color: #222;
 }
 
-.link-list a {
-  color: #1DB954;              /* Spotify green for a standout color */
-  border: 1px solid #1DB954;  /* Border matching text color */
-  padding: 0.75em 1em;         /* Add spacing inside each link */
-  display: inline-block;       /* Make the link box-shape */
-  width: fit-content;          /* Shrink to content width */
-  text-transform: uppercase;   /* Capitalize letters */
-  letter-spacing: 1px;         /* Space out letters slightly */
-  text-decoration: none;       /* Remove underline */
-  transition: background-color 0.3s, color 0.3s;  /* Smooth hover transition */
+/* Main content */
+main {
+  flex-grow: 1;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.link-list a:hover {
-  background-color: #1DB954;   /* Fill background on hover */
-  color: #000;                 /* Change text to black on hover */
-  cursor: pointer;             /* Pointer cursor on hover */
+/* Headings */
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.05em;
 }
 
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #ddd
