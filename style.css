@@ -1,4 +1,4 @@
-
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -141,12 +141,4 @@ hr {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 4px;
-}
-
-.link-list a:hover {
-  background-color: #1DB954;
-  color: #000000;
-  cursor: pointer;
-}
+  transition
